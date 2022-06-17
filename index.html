@@ -16,16 +16,16 @@
             <li>Your IP Address: 107.3.176.194</li>
             <li>Your ISP: Comcast Cable</li>
             <li>Learn More ›</li>
-            <li><img src="img/icon/dark/close.png"alt="close"></li>
         </ul> 
+        <img class="close"src="img/icon/dark/close.png"alt="close">
     </div>
     <header class="container">
         <p class="logo">Company Name</p>
         <ul class="menu">
-            <li>WHY US <img src="img/icon/nav/▾ copy.png" alt="copy"></li>
+            <li class="menu-icon">WHY US</li>
             <li>VPN APPS</li>
-            <li>SUPPORT<img src="img/icon/nav/▾ copy.png" alt="copy"></li>
-            <li>RESSOURCES<img src="img/icon/nav/▾ copy.png" alt="copy"></li>
+            <li class="menu-icon">SUPPORT</li>
+            <li class="menu-icon">RESSOURCES</li>
         </ul>
         <div>
         <button class="btn login">LOG IN</button>
@@ -60,112 +60,196 @@
             <li>CONTACT</li>
         </ul>
     </section>
-    <section class="main_section">
-        <main class="container">
-            <p>Recent posts</p>
-            <div>
-                <img src="img/post1.png">
-                <p>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
-                    <p>Derek Zimmer</p><p> |  JUL 25, 2018</p>
-                    <p>Governments, Networking, Open Source, Privacy, Security</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+    <section class=" container main_section">
+        <main class="posts">
+            <p class="post_title">Recent posts</p>
+            <div class="post">
+                <img class="post_img" src="img/post1.png">
+                <div class="post_content">
+                    <p class="post_text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+                    <div class="main_line">
+                        <span class="main_author">Derek Zimmer</span><span class="main_time"> |  JUL 25, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Governments, Networking, Open Source, Privacy, Security</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/post2.png">
-                <p>How to get cheaper flights using a VPNt</p>
-                    <p>Jayson</p><p> |  JUL 24, 2018</p>
-                    <p>Guides</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+            <hr class='post_hr'/>
+            <div class="post">
+                <img class="post_img" src="img/post2.png">
+                <div class="post_content">
+                    <p class="post_text">How to get cheaper flights using a VPN</p>
+                    <div class="main_line">
+                        <span class="main_author">Jayson</span><span class="main_time"> |  JUL 24, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Guides</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/post3.png">
-                <p>Net Neutrality was repealed, but the fight is far from over</p>
-                    <p>Chris Miller</p><p> |  JUL 22, 2018</p>
-                    <p>Governments, Net Neutrality, News</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+            <hr class='post_hr'/>
+            <div class="post">
+                <img class="post_img" src="img/post3.png">
+                <div class="post_content">
+                    <p class="post_text">Net Neutrality was repealed, but the fight is far from over</p>
+                    <div class="main_line">
+                        <span class="main_author">Chris Miller</span><span class="main_time"> |  JUL 22, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Governments, Net Neutrality, News</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/post1.png">
-                <p>The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
-                    <p>Derek Zimmer</p><p> |  JUL 25, 2018</p>
-                    <p>Governments, Networking, Open Source, Privacy, Security</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+            <hr class='post_hr'/>
+            <div class="post">
+                <img class="post_img" src="img/post1.png">
+                <div class="post_content">
+                    <p class="post_text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
+                    <div class="main_line">
+                        <span class="main_author">Derek Zimmer</span><span class="main_time"> |  JUL 25, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Governments, Networking, Open Source, Privacy, Security</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/post2.png">
-                <p>How to get cheaper flights using a VPNt</p>
-                    <p>Jayson</p><p> |  JUL 24, 2018</p>
-                    <p>Guides</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+            <hr class='post_hr'/>
+            <div class="post">
+                <img class="post_img" src="img/post2.png">
+                <div class="post_content">
+                    <p class="post_text">How to get cheaper flights using a VPN</p>
+                    <div class="main_line">
+                        <span class="main_author">Jayson</span><span class="main_time"> |  JUL 24, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Guides</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/post3.png">
-                <p>Net Neutrality was repealed, but the fight is far from over</p>
-                    <p>Chris Miller</p><p> |  JUL 22, 2018</p>
-                    <p>Governments, Net Neutrality, News</p>
-                    <img src="img/icon/comment.png" alt="comment" />0
-                    <hr/>
+            <hr class='post_hr'/>
+            <div class="post">
+                <img class="post_img" src="img/post3.png">
+                <div class="post_content">
+                    <p class="post_text">Net Neutrality was repealed, but the fight is far from over</p>
+                    <div class="main_line">
+                        <span class="main_author">Chris Miller</span><span class="main_time"> |  JUL 22, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Governments, Net Neutrality, News</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
             </div>
-            <button>OLDER POSTS</button>
+            <hr class='post_hr'/>
+            <div class="old">
+            <button class="btn btn-post">OLDER POSTS</button>
+            </div>
         </main>
+        <div class="vl"></div>
         <aside>
-            <input placeholder="Search blog">
-            <section class="">
-                <img src="img/bell.png" alt="bell"><p>Announcements</p>
+            <div class="search">
+            <input  placeholder="       Search blog">
+            <img  src="img/search.png" alt="search"/>
+            </div>
+            <section class="ann">
+                <div class="ann_title">
+                <img src="img/bell.png" alt="bell">
+                <p class="ann_title_text">Announcements</p>
+                </div>
                 <ul>
-                    <li>Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
-                    <li>New Servers (US Washington DC)</li>
-                    <li>New Servers (US Denver)</li>
-                    <li>Open Source: Releasing the PIA iOS Client</li>
-                    <li>Opera Extension is now available</li>
+                    <li class="dot-style">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                    <li class="dot-style">New Servers (US Washington DC)</li>
+                    <li class="dot-style">New Servers (US Denver)</li>
+                    <li class="dot-style">Open Source: Releasing the PIA iOS Client</li>
+                    <li class="dot-style">Opera Extension is now available</li>
                 </ul>
-                <hr/>
             </section>
-            <section class="">
-                <img src="img/wifi.png" alt="wifi"><p>Popular posts</p>
+            <hr class='aside_hr'/>
+            <section class="ann">
+                <div class="ann_title">
+                <img src="img/wifi.png" alt="wifi">
+                <p class="ann_title_text">Popular posts</p>
+                </div>
                 <ul>
-                    <li>The Gift of Privacy</li>
-                    <li>UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
-                    <li>About the PIA Client Security and VPN Security in General</li>
-                    <li>A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
-                    <li>Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
+                    <li class="dot-style">The Gift of Privacy</li>
+                    <li class="dot-style">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
+                    <li class="dot-style">About the PIA Client Security and VPN Security in General</li>
+                    <li class="dot-style">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                    <li class="dot-style">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
                 </ul>
-                <hr/>
             </section>
-            <img src="img/private.png" alt="private" />
-            <p>Tag cloud</p>
+            <hr class='aside_hr'/>
+            <img class="private" src="img/private.png" alt="private" />
+            <p class="ann_title">Tag cloud</p>
             <img src="img/tags.png" alt="tags">
         </aside>
     </section>
-    <section class="container pricing">
-        <p>Sign up today – 7 day money back guarantee</p>
-        <div>
-            <p>MONTHLY</p>
-            <p>$ 6.95 /mo.</p>
-            <p>Includes all VPN features.</p>
-            <button>SIGN UP</button>
+    <section class="pricing">
+        <p class="pricing_title">Sign up today – 7 day money back guarantee</p>
+        <div class="pricing_cards">
+            <div class="pricing_card">
+                <p class="pricing_name_card">MONTHLY</p>
+                <img src="img/green_line.png" alt="green-line">
+                <div class="center">
+                <span class="pricing_card_dollar">$</span><span class="pricing_card_cost"> 6.95 </span><span class="pricing_card_mon"> /mo.</span>
+                </div>
+                <hr class="pricing_hr">
+                <p class="pricing_card_vpn">Includes all VPN features.</p>
+                <div class="center">
+                <button class="btn btn_sign_up">Sign Up</button>
+                </div>
+            </div>
+            <div class="pricing_card_big" >
+                <p class="pricing_name_card">TWO YEARS</p>
+                <img src="img/green_line.png" alt="green-line">
+                <div class="center">
+                <span class="pricing_card_dollar">$</span><span class="pricing_card_cost"> 2.91 </span><span class="pricing_card_mon"> /mo.</span>
+                </div>
+                <hr class="pricing_hr">
+                <div class="center">
+                <span class="pricing_card_vpn red">$166.80 </span><span class="pricing_card_vpn"> $69.95 per two years</span>
+                </div>
+                <p class="pricing_card_save">Save 58%*</p>
+                <div class="center">
+                <button class="btn btn_sign_up big">Sign Up</button>
+                </div>
+            </div>
+            <div class="pricing_card">
+                <p class="pricing_name_card">YEARLY</p>
+                <img src="img/green_line.png" alt="green-line">
+                <div class="center">
+                <span class="pricing_card_dollar">$</span><span class="pricing_card_cost"> 3.33 </span><span class="pricing_card_mon"> /mo.</span>
+                </div>
+                <hr class="pricing_hr">
+                <div class="center">
+                <span class="pricing_card_vpn red">$83.40</span><span class="pricing_card_vpn"> $39.95 per year</span>
+                </div>
+                <p class="pricing_card_save">Save 52%*</p>
+                <div class="center">
+                <button class="btn btn_sign_up">Sign Up</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>TWO YEARS</p>
-            <p>$ 2.91 /mo.</p>
-            <p>$166.80 $69.95 per two years</p>
-            <p>Save 58%*</p>
-            <button>SIGN UP</button>
-        </div>
-        <div>
-            <p>YEARLY</p>
-            <p>$ 3.33 /mo.</p>
-            <p>$83.40 $39.95 per year</p>
-            <p>Save 52%*</p>
-            <button>SIGN UP</button>
-        </div>
-        <div>
-            <p>Ways to pay:</p>
+        <div class="ways">
+            <p class="ways_title">Ways to pay:</p>
             <img src="img/visa.png" alt="visa" />
             <img src="img/mc_vrt_pos.png" alt="mastercard" />
             <img src="img/amex_logo.png" alt="amexpress" />
@@ -173,55 +257,65 @@
             <img src="img/Bitcoin.png" alt="bitcoin" />
             <img src="img/OK Pay.png" alt="okpay" />
             <img src="img/amazon.png" alt="amazon" />
-            <p>How to pay anonymously<img src="img/icon/green/Shape.png"></p>
-            <p>REDEEM GIFT CARD<img src="img/icon/green/Shape.png"></p>
+        </div>
+        <div class="how_to_pay">
+            <p>How to pay anonymously   <img src="img/icon/green/Shape.png"></p>
+            <p>Redeem gift card    <img src="img/icon/green/Shape.png"></p>
         </div>
     </section>
+    <p class="footer_logo">Company Name</p>
     <footer class="container">
-        <p>Company Name</p>
-        <ul>
-            <li>Company</li>
-            <li>About Us</li>
-            <li>Our Team</li>
-            <li>Carrers</li>
-            <li>Press</li>
-            <li>In the Media</li>
-            <li>VPN Reviews</li>
-            <li>Companies We Support</li>
-            <li>Contact Us</li>
-            <li>Blog</li>
+        <ul class="footer_first">
+            <li class="footer_title">Company</li>
+            <li class="footer_item">About Us</li>
+            <li class="footer_item">Our Team</li>
+            <li class="footer_item">Carrers</li>
+            <li class="footer_item">Press</li>
+            <li class="footer_item">In the Media</li>
+            <li class="footer_item">VPN Reviews</li>
+            <li class="footer_item">Companies We Support</li>
+            <li class="footer_item">Contact Us</li>
+            <li class="footer_item">Blog</li>
         </ul>
-        <ul>
-            <li>Programs</li>
-            <li>Whitehat Security</li>
-            <li>Affiliates</li>
+        <ul class="footer_second">
+            <li class="footer_title">Programs</li>
+            <li class="footer_item">Whitehat Security</li>
+            <li class="footer_item">Affiliates</li>
         </ul>
-        <ul>
-            <li>learn more</li>
-            <li>VPN Encryption</li>
-            <li>Android VPN</li>
-            <li>iOS VPN App</li>
-            <li>PIA Sitemap</li>
+        <ul class="footer_third">
+            <li class="footer_title">learn more</li>
+            <li class="footer_item">VPN Encryption</li>
+            <li class="footer_item">Android VPN</li>
+            <li class="footer_item">iOS VPN App</li>
+            <li class="footer_item">PIA Sitemap</li>
         </ul>
-        <ul>
-            <li>LEGAL</li>
-            <li>Terms Of Service</li>
-            <li>Privacy Policy</li>
-            <li>DMCA Policy</li>
-            <li>Export Control Policy</li>
+        <ul class="footer_four">
+            <li class="footer_title">LEGAL</li>
+            <li class="footer_item">Terms Of Service</li>
+            <li class="footer_item">Privacy Policy</li>
+            <li class="footer_item">DMCA Policy</li>
+            <li class="footer_item">Export Control Policy</li>
         </ul>
-        <ul>
-            <li>ABOUT</li>
-            <li>Private Internet Access is the leading VPN Service provider specializing in 
+        <ul class="footer_five">
+            <li class="footer_title">ABOUT</li>
+            <li class="footer_item">Private Internet Access is the leading VPN Service provider specializing in 
                 secure, encrypted VPN tunnels which create several layers of privacy and security providing you safety on the
                  internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+ regions.</li>
-            <li>Map data provided by Google</li>
-            <li>PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved. PC Mag 
+            <li class="footer_item">Map data provided by Google</li>
+            <li class="footer_item">PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights Reserved. PC Mag 
                 quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights Reserved. </li>
-            <li>© London Trust Media, Inc. All Rights Reserved.</li>
+            <li class="footer_item">© London Trust Media, Inc. All Rights Reserved.</li>
         </ul>
-        <p>SOCIAL</p>
-        <img src="img/logo/social-links.png" alt="social" />
+        <div class="footer_six">
+        <p class="footer_title">SOCIAL</p>
+        <img  class="footer_item" src="img/logo/logo/f.png" alt="social" />
+        <img  class="footer_item" src="img/logo/logo/Shape.png" alt="social" />
+        <img  class="footer_item" src="img/icon/logo/logo/Shapeg+.png" alt="social" />
+        <img  class="footer_item" src="img/icon/logo/logo/Group.png" alt="social" />
+        <img  class="footer_item" src="img/icon/logo/logo/2SL.png" alt="social" />
+        <img  class="footer_item" src="img/icon/logo/logo/sociai icons youtube.png" alt="social" />
+        
+        </div>
     </footer>
    
     

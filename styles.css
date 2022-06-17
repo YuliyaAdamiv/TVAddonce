@@ -9,10 +9,7 @@
     margin: 0 200px;
     
 }
-.warning li,
-.menu li,
-.tags li,
-footer li{
+li{
     list-style-type: none;
 }
 .top{
@@ -27,6 +24,12 @@ footer li{
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 20px;
 }
 .warning li{
     margin: 12px 32px 12px 0;
@@ -58,6 +61,13 @@ header{
     display: flex;
     flex-direction: row;
     padding:50px 0;
+    position: relative;
+}
+.menu-icon::after{
+    content: "\25be";
+    width:10px;
+    height:5px;
+    margin-left: 10px;
 }
 .menu li{
     margin-right: 30px;
@@ -70,6 +80,7 @@ header{
     border-radius: 30px;
     height: 40px;
 }
+
 .login{
     width:90px;
     border: 1px solid #4CB649;
@@ -156,6 +167,289 @@ header{
     display: flex;
     flex-direction: row;
 }
-aside{
-    border-left: 1px solid #889099;
+.vl {
+    border-left: 2px solid #F7F7F7;
+    height: 1830px;
+    top: 187%;
+    position: absolute;
+    left: 50%;
+    margin-left: 173px;
 }
+.search{
+    position:relative;
+    margin-top: 20px;
+}
+.search input{
+    padding:20px;
+    width:340px;
+}
+.search img{
+    width:18px;
+    height:18px;
+    display:block; position:absolute; top:20px; left:20px;
+}
+.post_title{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 40px;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+    margin-right: 20px;
+}
+.post_content{
+    margin: 0 0 0 40px ;
+}
+.post_text{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+   margin-bottom: 7px;
+}
+.post_img{
+    margin-bottom:60px;
+}
+.post_hr{
+    margin-right: 40px;
+}
+.btn-post{
+    width:260px;
+    border: 1px solid #4CB649;
+    background-color: #FFFFFF;
+    color: #4CB649;
+    margin-top: 40px;
+    
+}
+.old{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 118px;
+}
+aside{
+    margin-left: 200px;
+}
+aside li:before{
+    color:#4CB649
+}
+.dot-style{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323642;
+}
+.dot-style:before {
+    content: "•";
+    padding-right:4px;
+    vertical-align:middle;
+    font-size:1.8em;
+}
+.pricing{
+    padding: 0 200px;
+    background: linear-gradient(135deg, #3D4251 0%, #272B35 100%);
+    
+}
+.pricing_cards{
+    display:flex;
+    flex-direction: row;
+}
+.pricing_title{
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    padding:100px 0 60px 0;
+}
+.pricing_card{
+    width:380px;
+    height:340px;
+    background: #FFFFFF;
+    border: 1px solid #EBECED;
+    border-radius: 6px;
+    margin-top:20px;
+}
+.pricing_card_big {
+    width:380px;
+    height:380px;
+    background: #FFFFFF;
+    border: 4px solid #4CB649;
+    border-radius: 4px;
+}
+.pricing_card img,
+.pricing_card_big img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:12px;
+  margin-bottom:16px;
+  width: 7%;
+}
+.pricing_name_card{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #323642;
+    margin-top: 48px;
+}
+.pricing_card_dollar {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #22252E;
+}
+.pricing_card_cost{
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -1.5px;
+    color: #22252E;
+}
+.pricing_card_mon{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #22252E;
+}
+.pricing_card_vpn{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #323642;
+}
+.btn_sign_up{
+    width:205px;
+    border: 1px solid #4CB649;
+    text-align: center;
+    color: #4CB649;
+    text-transform: uppercase;
+    margin-top:10px;
+    background: #F7F7F7;
+}
+.big{
+    color: #FFFFFF;
+    background:#4CB649;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing_hr{
+   margin: 18px 90px 27px 90px;
+}
+.pricing_card_save{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323642;
+    text-align: center;
+}
+.red{
+    color: #F24458;
+    text-decoration: line-through;
+}
+.ways_title{
+    font-weight: 300;
+font-size: 18px;
+line-height: 28px;
+color: #FFFFFF;
+}
+.ways,
+.how_to_pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.ways img,
+.ways p{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.how_to_pay p{
+    margin: 40px 44px 60px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #4CB649;
+}
+.pricing_cards div{
+    margin-right: 30px;
+}
+.ann{
+    margin-bottom: 30px;
+}
+.ann_title{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+    color: #22252E;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 42px 0 30px 0;
+}
+.ann_title_text{
+    margin-left: 30px;
+}
+.private{
+    margin: 30px 0 50px 0;
+}
+.aside_hr{
+    margin-right: 30px;
+}
+.footer_logo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #000000;
+    margin: 84px 0 58px 200px;
+}
+.footer_title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
+    margin-bottom: 20px;
+}
+.footer_item{
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #889099;
+margin-bottom: 12px;
+}
+.footer_six img{
+    margin-right: 20px;
+}
+.footer_six img:last-child{
+    margin-right:0px
+}
+footer{
+    display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.footer_first{grid-area: 1 / 1 / 4 / 2; }
+.footer_second{grid-area: 1 / 2 / 2 / 3}
+.footer_third{grid-area: 2 / 2 / 4 / 3;}
+.footer_four{grid-area: 1 / 3 / 3 / 4;}
+.footer_five{grid-area: 1 / 4 / 3 / 5;}
+.footer_six{grid-area: 3 / 4 / 4 / 5; }
