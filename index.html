@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>TV Addonce</title>
@@ -19,20 +21,32 @@
         </ul> 
         <img class="close"src="img/icon/dark/close.png"alt="close">
     </div>
-    <header class="container">
+ <header class="container">
         <p class="logo">Company Name</p>
-        <ul class="menu">
-            <li class="menu-icon">WHY US</li>
-            <li>VPN APPS</li>
-            <li class="menu-icon">SUPPORT</li>
-            <li class="menu-icon">RESSOURCES</li>
+        <ul class="menu_main">
+            <li class="menu-icon menu-icons">WHY US</li>
+            <li class="menu-icon ">VPN APPS</li>
+            <li class="menu-icon menu-icons">SUPPORT</li>
+            <li class="menu-icon menu-icons">RESSOURCES</li>
         </ul>
         <div>
         <button class="btn login">LOG IN</button>
         <button class="btn getstart">GET STARTED</button>
         </div>
+        <ul class="menu">
+            <div class="menu-container">
+                <li><a class="menu-item" href="#">WHY US</a></li>
+                <li><a class="menu-item" href="#">VPN APPS</a></li>
+                <li><a class="menu-item" href="#">SUPPORT</a></li>
+                <li><a class="menu-item" href="#">RESSOURCES</a></li>
+            </div>
+        </ul>
+        <button class="hamburger">
+            <i class="menu-icon material-icons">menu</i>
+            <i class="close-icon material-icons">close</i>
+          </button>
     </header>
-    <section class="container main">
+     <section class="container main">
         <img class="main_img"src="img/Bitmap.png">
         <div class="main_content">
             <p class="main_text">TV Addons: Legal battle against Canadian media giants demonstrates severe consequences 
@@ -46,7 +60,7 @@
             <img class="comments"src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
         </div>
     </section>
-    <section class="container">
+     <section class="container">
         <ul class="tags">
             <li>TAGS:</li>
             <li>BITCOIN</li>
@@ -197,9 +211,9 @@
                 </ul>
             </section>
             <hr class='aside_hr'/>
-            <img class="private" src="img/private.png" alt="private" />
-            <p class="ann_title">Tag cloud</p>
-            <img src="img/tags.png" alt="tags">
+            <img class="private ways_title" src="img/private.png" alt="private" />
+            <p class="ann_title ways_title">Tag cloud</p>
+            <img class="ann_title_img ways_title"src="img/tags.png" alt="tags">
         </aside>
     </section>
     <section class="pricing">
@@ -316,8 +330,8 @@
         <img  class="footer_item" src="img/icon/logo/logo/sociai icons youtube.png" alt="social" />
         
         </div>
-    </footer>
+    </footer> 
    
-    
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
