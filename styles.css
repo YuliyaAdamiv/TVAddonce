@@ -841,4 +841,9 @@ aside{
         top: 157%;
     }
 }
+@media (min-width: 1551px) and (max-width: 1900px){
+    .vl{
+        top: 158%;
+    }
+}
 
