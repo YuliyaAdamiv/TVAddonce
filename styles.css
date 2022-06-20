@@ -841,9 +841,12 @@ aside{
         top: 157%;
     }
 }
-@media (min-width: 1551px) and (max-width: 1900px){
+@media (min-width: 1551px) and (max-width: 1980px){
     .vl{
         top: 158%;
+    }
+    .tags li:nth-child(8){
+        margin-right: 450px;
     }
 }
 
