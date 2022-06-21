@@ -11,23 +11,22 @@
     <title>TV Addonce</title>
 </head>
 <body >
-    <div class="top">
+    <div class="top ">
         <ul class="warning">
-            <li><img src="img/icon/red/warning.png" alt="warning"></li>
-            <li>You are not protected</li>
-            <li>Your IP Address: 107.3.176.194</li>
-            <li>Your ISP: Comcast Cable</li>
-            <li>Learn More ›</li>
+            <li class="warning_first">You are not protected</li>
+            <li class="warning_second">Your IP Address: 107.3.176.194</li>
+            <li class="warning_third">Your ISP: Comcast Cable</li>
+            <li class="warning_four">Learn More ›</li>
         </ul> 
         <img class="close"src="img/icon/dark/close.png"alt="close">
     </div>
  <header class="container">
         <p class="logo">Company Name</p>
         <ul class="menu_main">
-            <li class="menu-icon menu-icons">WHY US</li>
-            <li class="menu-icon ">VPN APPS</li>
-            <li class="menu-icon menu-icons">SUPPORT</li>
-            <li class="menu-icon menu-icons">RESSOURCES</li>
+            <li class="menu-icon menu-icons"><button class="icon">WHY US</button></li>
+            <li class="menu-icon "><button class="icon">VPN APPS</button></li>
+            <li class="menu-icon menu-icons"><button class="icon">SUPPORT</button></li>
+            <li class="menu-icon menu-icons"><button class="icon">RESSOURCES</button></li>
         </ul>
         <div>
         <button class="btn login">LOG IN</button>
@@ -61,7 +60,8 @@
         </div>
     </section>
      <section class="container">
-        <ul class="tags">
+        <div class="tags">
+        <ul class="tags_left">
             <li>TAGS:</li>
             <li>BITCOIN</li>
             <li>BITTORRENT</li>
@@ -70,9 +70,12 @@
             <li>PRIVACY</li>
             <li>PROGRAMMING</li>
             <li>SECURITY</li>
+        </ul>
+        <ul class="tags_right">
             <li>TEAM</li>
             <li>CONTACT</li>
         </ul>
+    </div>
     </section>
     <section class=" container main_section">
         <main class="posts">
@@ -177,9 +180,8 @@
             <button class="btn btn-post">OLDER POSTS</button>
             </div>
         </main>
-        <div class="vl"></div>
         <aside>
-            <div class="search">
+            <div class="search">   
             <input  placeholder="       Search blog">
             <img  src="img/search.png" alt="search"/>
             </div>
@@ -212,8 +214,56 @@
             </section>
             <hr class='aside_hr'/>
             <img class="private ways_title" src="img/private.png" alt="private" />
-            <p class="ann_title ways_title">Tag cloud</p>
-            <img class="ann_title_img ways_title"src="img/tags.png" alt="tags">
+            <p class="ann_title ways_title tag_cloud_name">Tag cloud</p>
+            <div class="tag_cloud ann_title_img ways_title">
+            <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+                <li><a href="#" data-weight="1">mass</a></li>
+                <li><a href="#" data-weight="1">surveillance</a></li>
+                <li><a href="#" data-weight="1">internet</a></li>
+                <li><a href="#" data-weight="1">privacy</a></li>
+                <li><a href="#" data-weight="6">china</a></li>
+                <li><a href="#" data-weight="3">API</a></li>
+                <li><a href="#" data-weight="2">whatsapp</a></li>
+                <li><a href="#" data-weight="2">police</a></li>
+                <li><a href="#" data-weight="2">dna</a></li>
+                <li><a href="#" data-weight="6">nsa</a></li>
+                <li><a href="#" data-weight="3">Apple</a></li>
+                <li><a href="#" data-weight="7">Facebook</a></li>
+                <li><a href="#" data-weight="8">fcc</a></li>
+                <li><a href="#" data-weight="1">google</a></li>
+                <li><a href="#" data-weight="3">net</a></li>
+                <li><a href="#" data-weight="1">mass</a></li>
+                <li><a href="#" data-weight="1">surveillance</a></li>
+                <li><a href="#" data-weight="1">internet</a></li>
+                <li><a href="#" data-weight="1">privacy</a></li>
+                <li><a href="#" data-weight="6">china</a></li>
+                <li><a href="#" data-weight="3">API</a></li>
+                <li><a href="#" data-weight="2">whatsapp</a></li>
+                <li><a href="#" data-weight="2">police</a></li>
+                <li><a href="#" data-weight="2">dna</a></li>
+                <li><a href="#" data-weight="6">nsa</a></li>
+                <li><a href="#" data-weight="3">Apple</a></li>
+                <li><a href="#" data-weight="7">Facebook</a></li>
+                <li><a href="#" data-weight="8">fcc</a></li>
+                <li><a href="#" data-weight="1">google</a></li>
+                <li><a href="#" data-weight="3">net</a></li>
+                <li><a href="#" data-weight="1">mass</a></li>
+                <li><a href="#" data-weight="1">surveillance</a></li>
+                <li><a href="#" data-weight="1">internet</a></li>
+                <li><a href="#" data-weight="1">privacy</a></li>
+                <li><a href="#" data-weight="6">china</a></li>
+                <li><a href="#" data-weight="3">API</a></li>
+                <li><a href="#" data-weight="2">whatsapp</a></li>
+                <li><a href="#" data-weight="2">police</a></li>
+                <li><a href="#" data-weight="2">dna</a></li>
+                <li><a href="#" data-weight="6">nsa</a></li>
+                <li><a href="#" data-weight="3">Apple</a></li>
+                <li><a href="#" data-weight="7">Facebook</a></li>
+                <li><a href="#" data-weight="8">fcc</a></li>
+                <li><a href="#" data-weight="1">google</a></li>
+                <li><a href="#" data-weight="3">net</a></li>
+              </ul>
+              </div>
         </aside>
     </section>
     <section class="pricing">
@@ -239,7 +289,7 @@
                 </div>
                 <hr class="pricing_hr">
                 <div class="center">
-                <span class="pricing_card_vpn red">$166.80 </span><span class="pricing_card_vpn"> $69.95 per two years</span>
+                <span class="pricing_card_vpn red"><p>$166.80</p></span><span class="pricing_card_vpn"> $69.95 per two years</span>
                 </div>
                 <p class="pricing_card_save">Save 58%*</p>
                 <div class="center">
@@ -254,7 +304,7 @@
                 </div>
                 <hr class="pricing_hr">
                 <div class="center">
-                <span class="pricing_card_vpn red">$83.40</span><span class="pricing_card_vpn"> $39.95 per year</span>
+                <span class="pricing_card_vpn red"><p>$83.40</p></span><span class="pricing_card_vpn"> $39.95 per year</span>
                 </div>
                 <p class="pricing_card_save">Save 52%*</p>
                 <div class="center">
@@ -273,8 +323,8 @@
             <img src="img/amazon.png" alt="amazon" />
         </div>
         <div class="how_to_pay">
-            <p>How to pay anonymously   <img src="img/icon/green/Shape.png"></p>
-            <p>Redeem gift card    <img src="img/icon/green/Shape.png"></p>
+            <a>How to pay anonymously   <img src="img/icon/green/Shape.png"></a>
+            <a>Redeem gift card    <img src="img/icon/green/Shape.png"></a>
         </div>
     </section>
     <p class="footer_logo">Company Name</p>
@@ -322,12 +372,12 @@
         </ul>
         <div class="footer_six">
         <p class="footer_title">SOCIAL</p>
-        <img  class="footer_item" src="img/logo/logo/f.png" alt="social" />
-        <img  class="footer_item" src="img/logo/logo/Shape.png" alt="social" />
-        <img  class="footer_item" src="img/icon/logo/logo/Shapeg+.png" alt="social" />
-        <img  class="footer_item" src="img/icon/logo/logo/Group.png" alt="social" />
-        <img  class="footer_item" src="img/icon/logo/logo/2SL.png" alt="social" />
-        <img  class="footer_item" src="img/icon/logo/logo/sociai icons youtube.png" alt="social" />
+        <button class="icon"> <img  class="footer_item" src="img/logo/logo/f.png" alt="social" /></button>
+        <button class="icon"> <img  class="footer_item" src="img/logo/logo/Shape.png" alt="social" /></button>
+        <button class="icon"><img  class="footer_item" src="img/icon/logo/logo/Shapeg+.png" alt="social" /></button>
+        <button class="icon"> <img  class="footer_item" src="img/icon/logo/logo/Group.png" alt="social" /></button>
+        <button class="icon"><img  class="footer_item" src="img/icon/logo/logo/2SL.png" alt="social" /></button>
+        <button class="icon"><img  class="footer_item" src="img/icon/logo/logo/sociai icons youtube.png" alt="social" /></button>
         
         </div>
     </footer> 
