@@ -71,7 +71,6 @@ header {
 .menu_main {
   display: flex;
   flex-direction: row;
-  padding: 50px 0;
   position: relative;
 }
 .icon {
@@ -411,11 +410,14 @@ aside li:before {
   color: #323642;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .red {
   color: #f24458;
   text-decoration: line-through;
 }
-.red p {
+.red span {
   margin: 0 10px;
 }
 .ways_title {
@@ -423,6 +425,18 @@ aside li:before {
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
+}
+.btn-post:active,
+.btn_sign_up:active,
+.login:active {
+  background: #4cb649;
+  color: #ffffff;
+}
+.big:active,
+.getstart:active {
+  background: #ffffff;
+  color: #4cb649;
+  border: 1px solid #4cb649;
 }
 .ways,
 .how_to_pay {
@@ -500,10 +514,10 @@ aside li:before {
   color: #889099;
   margin-bottom: 12px;
 }
-.footer_six button {
+.footer_six a {
   margin-right: 20px;
 }
-.footer_six button:last-child {
+.footer_six a:last-child {
   margin-right: 0px;
 }
 footer {
@@ -848,7 +862,7 @@ ul.cloud a:hover::before {
 .footer_title {
   margin-bottom: 10px;
 }
-.footer_six button:last-child {
+.footer_six a:last-child {
   margin-right: 0px;
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -980,7 +994,7 @@ ul.cloud a:hover::before {
 .footer_title {
   margin-bottom: 10px;
 }
-.footer_six button {
+.footer_six a {
   margin-right: 30px;
 }
 @media (min-width: 769px) and (max-width: 1075px) {
@@ -1066,6 +1080,9 @@ ul.cloud a:hover::before {
 @media (min-width: 1076px) and (max-width: 1420px) {
   .container {
     margin: 0 100px;
+  }
+  .menu-icon {
+    margin-top: -40px;
   }
   .main_img {
     width: 50%;
