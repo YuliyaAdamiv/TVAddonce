@@ -6,7 +6,7 @@
 }
 
 .container {
-  margin: 0 200px;
+  margin: 16px 200px;
 }
 li {
   list-style-type: none;
@@ -62,17 +62,45 @@ li {
 button {
   cursor: pointer;
 }
+.menu_container {
+  display: none;
+}
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
+  margin: 42px -7px -75px 204px;
+}
+.menu_part_one {
+  display: inline-block;
+}
+.menu_part_two {
+  display: inline-block;
+}
+.menu_buttons {
+  display: inline-block;
+}
+.empty {
+  display: inline-block;
+  width: 18em;
+}
+.empty_con {
+  display: inline-block;
+  width: 15em;
 }
 .menu_main {
   display: flex;
   flex-direction: row;
   position: relative;
 }
+.menu_main li {
+  height: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+}
+
 .icon {
   border: none;
   background: white;
@@ -83,14 +111,16 @@ header {
   content: '\25be';
   width: 10px;
   height: 5px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   cursor: pointer;
 }
 .menu_main li {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .menu_main li:last-child {
-  border-bottom: 3px solid #4cb649;
+  border-bottom: 1px solid #4cb649;
+  margin-right: -27px;
+  letter-spacing: 0.8px;
 }
 .btn {
   font-weight: 500;
@@ -107,6 +137,7 @@ header {
   background-color: #ffffff;
   color: #4cb649;
 }
+
 .getstart {
   width: 160px;
   background: linear-gradient(0deg, #4cb649 0%, #5ddf5a 100%);
@@ -133,7 +164,7 @@ header {
   margin-bottom: 84px;
 }
 .main_content {
-  margin: 60px;
+  margin: 60px 60px 40px 60px;
 }
 .zero {
   font-weight: 400;
@@ -148,6 +179,10 @@ header {
 .main_tags {
   text-transform: uppercase;
   color: #4cb649;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
 }
 .main_line {
   margin: 12px 0;
@@ -158,13 +193,14 @@ header {
 .tags {
   display: flex;
   flex-direction: row;
-  margin: 30px 0;
+  justify-content: space-between;
   background: #f7f7f7;
   border-radius: 4px;
-  /* padding: 33px 21px; */
+  margin-top: 33px;
+  padding: 15px 1px;
 }
 .tags li {
-  margin-right: 30px;
+  margin-right: 35px;
   color: #4cb649;
 }
 .tags_left {
@@ -178,14 +214,13 @@ header {
 .tags_right {
   display: flex;
   flex-direction: row;
-  margin-left: 20%;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1px;
 }
 .tags .tags_left li:first-child {
-  margin-left: 20px;
+  margin-left: 32px;
   margin-right: 43px;
   color: #22252e;
 }
@@ -206,12 +241,14 @@ header {
 .posts {
   border-right: 2px solid #f7f7f7;
   width: 100%;
+  margin-right: -69px;
 }
 main {
   width: 100%;
 }
 aside {
   width: 50%;
+  padding-left: 100px;
 }
 
 .search {
@@ -219,7 +256,7 @@ aside {
   margin-top: 20px;
 }
 .search input {
-  padding: 20px;
+  padding: 26px;
   width: 340px;
   border: 1px solid #d7d8d9;
   border-radius: 4px;
@@ -233,8 +270,8 @@ aside {
   height: 18px;
   display: block;
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 33px;
+  left: 20px;
 }
 .post_title {
   font-weight: 300;
@@ -260,20 +297,23 @@ aside {
   line-height: 34px;
   margin-bottom: 7px;
 }
-.post_img {
+.one {
   margin-bottom: 60px;
 }
-.post_hr {
-  margin-right: 40px;
-  background: #ebeced;
+.ones {
+  margin-top: 11px;
+  margin-bottom: 52px;
+}
+.two,
+.three {
+  margin-bottom: 30px;
 }
 .btn-post {
   width: 260px;
   border: 1px solid #4cb649;
   background-color: #ffffff;
   color: #4cb649;
-  margin-top: 130px;
-  margin-bottom: -60px;
+  margin-bottom: -116px;
 }
 .old {
   display: flex;
@@ -317,7 +357,7 @@ aside li:before {
   text-align: center;
   letter-spacing: -0.5px;
   color: #ffffff;
-  padding: 110px 0 30px 0px;
+  padding: 98px 0 30px 0px;
 }
 .pricing_card {
   width: 380px;
@@ -333,6 +373,7 @@ aside li:before {
   background: #ffffff;
   border: 4px solid #4cb649;
   border-radius: 4px;
+  padding-top: 20px;
 }
 .pricing_card img,
 .pricing_card_big img {
@@ -358,6 +399,10 @@ aside li:before {
   line-height: 32px;
   color: #22252e;
   margin-top: -20px;
+  margin-left: 5px;
+}
+.del {
+  margin-left: 36px;
 }
 .pricing_card_cost {
   font-weight: 300;
@@ -386,9 +431,8 @@ aside li:before {
   text-align: center;
   color: #4cb649;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 21px;
   background: #f7f7f7;
-  margin-left: 20px;
 }
 .big {
   color: #ffffff;
@@ -401,7 +445,7 @@ aside li:before {
   justify-content: center;
 }
 .pricing_hr {
-  margin: 18px 90px 27px 90px;
+  margin: 0 90px 27px 90px;
 }
 .pricing_card_save {
   font-weight: 700;
@@ -448,11 +492,11 @@ a {
 }
 .ways img,
 .ways p {
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-right: 27px;
+  margin-top: 40px;
 }
 .how_to_pay a {
-  margin: 40px 44px 60px 0;
+  margin: 10px 35px 76px 20px;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -462,7 +506,7 @@ a {
   cursor: pointer;
 }
 .pricing_cards div {
-  margin-right: 30px;
+  margin-right: 12px;
 }
 .ann {
   margin-bottom: 30px;
@@ -476,7 +520,7 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 42px 0 30px 0;
+  margin: 30px 0px 30px 9px;
 }
 .ann_title_text {
   margin-left: 30px;
@@ -494,7 +538,19 @@ a {
   font-size: 27px;
   line-height: 33px;
   color: #000000;
-  margin: 84px 0 58px 200px;
+  margin: 69px 0 58px 200px;
+}
+.tag_cloud_name {
+  width: 100%;
+  display: flex;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  color: #22252e;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 0px 30px 1px;
 }
 .footer_title {
   font-weight: 500;
@@ -514,17 +570,11 @@ a {
   color: #889099;
   margin-bottom: 12px;
 }
-.footer_six a {
-  margin-right: 20px;
-}
-.footer_six a:last-child {
-  margin-right: 0px;
-}
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 150px) 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 50px;
   grid-row-gap: 0px;
 }
 .footer_first {
@@ -537,13 +587,14 @@ footer {
   grid-area: 2 / 2 / 4 / 3;
 }
 .footer_four {
-  grid-area: 1 / 3 / 3 / 4;
+  grid-area: 1 / 3 / 2 / 4;
 }
 .footer_five {
   grid-area: 1 / 4 / 3 / 5;
 }
 .footer_six {
   grid-area: 3 / 4 / 4 / 5;
+  margin-top: -40px;
 }
 
 .hamburger,
@@ -559,10 +610,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 .hamburger {
   position: absolute;
-  top: 6em;
+  top: 9em;
   left: 6rem;
   border: none;
   cursor: pointer;
@@ -677,6 +727,9 @@ ul.cloud a::before {
   opacity: 0.15;
   transition: width 0.25s;
 }
+.search_posts {
+  display: none;
+}
 
 ul.cloud a:focus::before,
 ul.cloud a:hover::before {
@@ -688,31 +741,18 @@ ul.cloud a:hover::before {
     transition: none !important;
   }
 }
-@media (min-width: 320px) and (max-width: 380px) {
-  .post_title {
-    margin-top: 150px;
-  }
-  .search input {
-    padding: 5px;
-    width: 70%;
-    position: absolute;
-    top: -3600px;
-    left: 70px;
-  }
-  .search img {
-    position: absolute;
-    top: -3590px;
-    left: 80px;
-  }
-}
+
 @media (min-width: 320px) and (max-width: 575px) {
   .container {
-    margin: 0 30px;
+    margin: 0 10px;
   }
   .hamburger {
     display: block;
-    top: 8em;
+    top: 11em;
     left: 2rem;
+  }
+  .menu_container {
+    display: block;
   }
   .menu_main {
     display: none;
@@ -726,6 +766,11 @@ ul.cloud a:hover::before {
   .login {
     display: none;
   }
+  .search_posts {
+    display: block;
+    margin-left: 3px;
+    width: 100%;
+  }
   .top {
     height: 68px;
     padding: 0;
@@ -734,6 +779,7 @@ ul.cloud a:hover::before {
     top: 22px;
     right: 5px;
   }
+
   .warning li {
     margin: 10px 0px 5px 15px;
   }
@@ -743,7 +789,7 @@ ul.cloud a:hover::before {
   .warning {
     display: grid;
     grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 20px);
+    grid-template-rows: repeat(2, 15px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -771,18 +817,27 @@ ul.cloud a:hover::before {
     line-height: 34px;
     margin-bottom: 12px;
   }
+  .aside {
+    display: none;
+  }
+  .ann_title {
+    margin-top: 150px;
+  }
   .logo {
     margin-left: 50px;
+    font-size: 14px;
   }
   .getstart {
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 120px;
   }
   .tags {
     display: none;
   }
   .posts {
     border-right: none;
+    margin-right: 0;
   }
   .post {
     display: flex;
@@ -796,8 +851,12 @@ ul.cloud a:hover::before {
     align-items: center;
   }
   aside {
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 0;
+    width: 100%;
+  }
+  .search_posts {
+    display: block;
+    margin-left: 3px;
     width: 100%;
   }
   .pricing_cards {
@@ -817,6 +876,9 @@ ul.cloud a:hover::before {
   .pricing {
     padding: 0 30px;
   }
+  .search input {
+    width: 100%;
+  }
   .ways img,
   .ways p {
     margin-right: 10px;
@@ -824,6 +886,13 @@ ul.cloud a:hover::before {
   .pricing_card,
   .pricing_card_big {
     width: 100%;
+  }
+  header {
+    margin: 42px -7px -75px 10px;
+  }
+  .empty,
+  .empty_con {
+    display: none;
   }
   .ways_title {
     width: 100%;
@@ -835,7 +904,7 @@ ul.cloud a:hover::before {
   }
   footer {
     display: grid;
-    grid-template-columns: repeat(2, 175px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 200px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -857,33 +926,64 @@ ul.cloud a:hover::before {
   }
   .footer_six {
     grid-area: 3 / 2 / 4 / 3;
+    margin-top: -39px;
+  }
+  .footer_title {
+    margin-bottom: 10px;
+  }
+  .footer_six a:last-child {
+    margin-right: 0px;
+  }
+  .footer_six a {
+    margin-right: 20px;
+  }
+  .footer_six a:last-child {
+    margin-right: 0;
   }
 }
-.footer_title {
-  margin-bottom: 10px;
-}
-.footer_six a:last-child {
-  margin-right: 0px;
-}
+
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
     margin: 0 50px;
   }
   .hamburger {
     display: block;
+    top: 11em;
+  }
+  .empty,
+  .empty_con {
+    display: none;
+  }
+  header {
+    margin: 42px -7px -75px 20%;
+  }
+  .menu_container {
+    display: block;
   }
   .menu_main {
     display: none;
   }
+  aside {
+    width: 100%;
+    padding-left: 0;
+  }
   .login {
     display: none;
+  }
+  .search_posts {
+    display: block;
+    margin-left: 3px;
+    width: 100%;
   }
   .close {
     top: 22px;
     right: 5px;
   }
   .logo {
-    margin-left: 100px;
+    margin-left: 30px;
+  }
+  .pricing_card {
+    height: 400px;
   }
   .getstart {
     margin-top: 30px;
@@ -923,6 +1023,9 @@ ul.cloud a:hover::before {
   }
   .search input {
     width: 100%;
+  }
+  .aside {
+    display: none;
   }
   .pricing {
     padding: 0 30px;
@@ -964,10 +1067,16 @@ ul.cloud a:hover::before {
   .warning_four {
     grid-area: 1 / 2 / 2 / 3;
   }
-
+  .ann_title {
+    margin-top: 150px;
+  }
+  .empty,
+  .empty_con {
+    display: none;
+  }
   footer {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 200px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -990,13 +1099,17 @@ ul.cloud a:hover::before {
   .footer_six {
     grid-area: 3 / 2 / 4 / 3;
   }
+  .footer_title {
+    margin-bottom: 10px;
+  }
+  .footer_six a {
+    margin-right: 0;
+  }
+  .footer_six a:last-child {
+    margin-right: 0;
+  }
 }
-.footer_title {
-  margin-bottom: 10px;
-}
-.footer_six a {
-  margin-right: 30px;
-}
+
 @media (min-width: 769px) and (max-width: 1075px) {
   .container {
     margin: 0 150px;
@@ -1004,12 +1117,24 @@ ul.cloud a:hover::before {
   .login {
     display: none;
   }
+  header {
+    margin: 42px -7px -75px 20%;
+  }
+  .search_posts {
+    display: block;
+    margin-left: 3px;
+    width: 100%;
+  }
   .menu_main li {
     margin-right: 10px;
   }
   .hamburger {
     display: block;
     left: 9rem;
+    top: 7em;
+  }
+  .menu_container {
+    display: block;
   }
   .menu_main {
     display: none;
@@ -1024,26 +1149,33 @@ ul.cloud a:hover::before {
     margin-left: 50px;
   }
   .getstart {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: 100%;
   }
   .search input {
     width: 100%;
   }
+  .aside {
+    display: none;
+  }
   .menu-icons::after {
     margin-left: 5px;
   }
-  .tags {
-    display: none;
+  .tags .tags_left li:first-child {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  .tags li {
+    margin-right: 10px;
+    font-size: 8px;
+  }
+  .tags .tags_right li {
+    font-size: 8px;
   }
   .posts {
     border-right: none;
+    margin-right: 0;
   }
-  .tag_cloud_name {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+
   .main,
   .main_section {
     display: flex;
@@ -1053,7 +1185,10 @@ ul.cloud a:hover::before {
     margin-left: 150px;
     margin-right: 150px;
   }
-
+  .empty,
+  .empty_con {
+    display: none;
+  }
   .private {
     margin: 20px 100px;
   }
@@ -1066,6 +1201,10 @@ ul.cloud a:hover::before {
   }
   aside {
     width: 100%;
+    padding-left: 0;
+  }
+  .ann_title {
+    margin-top: 150px;
   }
   .pricing_cards div {
     margin-right: 10px;
@@ -1073,13 +1212,48 @@ ul.cloud a:hover::before {
   .footer_logo {
     margin-left: 100px;
   }
+  .footer_title {
+    margin-bottom: 10px;
+  }
+  .footer_six a {
+    margin-right: 10px;
+  }
+  .footer_six a:last-child {
+    margin-right: 0;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 360px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .footer_first {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+  .footer_second {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .footer_third {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .footer_four {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .footer_five {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+  .footer_six {
+    grid-area: 3 / 3 / 4 / 4;
+  }
 }
-.footer_title {
-  margin-bottom: 10px;
-}
+
 @media (min-width: 1076px) and (max-width: 1420px) {
   .container {
     margin: 0 100px;
+  }
+  .tags li {
+    margin-right: 20px;
   }
   .menu-icon {
     margin-top: -40px;
@@ -1087,20 +1261,35 @@ ul.cloud a:hover::before {
   .main_img {
     width: 50%;
   }
+  .search_posts {
+    display: none;
+  }
   .search input {
     width: 100%;
   }
-  .tags_right {
-    margin-left: 5%;
+  header {
+    margin-left: 100px;
+  }
+  .empty {
+    width: 3em;
+  }
+  .empty_con {
+    width: 5em;
   }
 }
 @media (min-width: 1421px) and (max-width: 1550px) {
-  .tags_right {
-    margin-left: 7%;
+  .search_posts {
+    display: none;
+  }
+  .empty {
+    width: 12em;
+  }
+  .empty_con {
+    width: 10em;
   }
 }
 @media (min-width: 1551px) and (max-width: 1980px) {
-  .tags_right {
-    margin-left: 35%;
+  .search_posts {
+    display: none;
   }
 }

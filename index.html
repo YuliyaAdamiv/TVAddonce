@@ -20,19 +20,25 @@
         </ul> 
         <button class="icon"><img class="close" src="img/icon/dark/close.png" alt="close"></button>
     </div>
- <header class="container">
+ <header>
+    <div class="menu_part_one">
         <p class="logo">Company Name</p>
+    </div>
+    <div class="empty_con"></div>
+    <div class="menu_part_two">
         <ul class="menu_main">
             <li class="menu-icon menu-icons"><button class="icon">WHY US</button></li>
             <li class="menu-icon "><button class="icon">VPN APPS</button></li>
             <li class="menu-icon menu-icons"><button class="icon">SUPPORT</button></li>
             <li class="menu-icon menu-icons"><button class="icon">RESSOURCES</button></li>
         </ul>
-        <div>
+    </div>
+    <div class="empty"></div>
+    <div class="menu_buttons">
         <button class="btn login">LOG IN</button>
         <button class="btn getstart">GET STARTED</button>
-        </div>
-        <div class="menu-container">
+    </div>
+    <div class="menu-container">
         <ul class="menu">
                 <li><a class="menu-item" href="#">WHY US</a></li>
                 <li><a class="menu-item" href="#">VPN APPS</a></li>
@@ -78,10 +84,16 @@
     </div>
 </div>
     <div class=" container main_section">
+       
         <main class="posts">
+            <div class="search search_posts">   
+                <label for="username"></label>
+                <input  id="username" placeholder="       Search blog">
+                <img  src="img/search.png" alt="search"/>
+                </div>
             <p class="post_title">Recent posts</p>
-            <div class="post">
-                <img class="post_img" src="img/post1.png" alt="picture">
+            <article class="post">
+                <img class="post_img one" src="img/post1.png" alt="picture">
                 <div class="post_content">
                     <p class="post_text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
                     <div class="main_line">
@@ -94,9 +106,9 @@
                         <img class="comments" src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
                     </div>
                 </div>
-            </div>
-            <div class="post">
-                <img class="post_img" src="img/post2.png" alt="picture">
+            </article>
+            <article class="post">
+                <img class="post_img two" src="img/post2.png" alt="picture">
                 <div class="post_content">
                     <p class="post_text">How to get cheaper flights using a VPN</p>
                     <div class="main_line">
@@ -109,9 +121,9 @@
                         <img class="comments" src="img/icon/comment.png" alt="comment"/><div class="zero">0</div>
                     </div>
                 </div>
-            </div>
-            <div class="post">
-                <img class="post_img" src="img/post3.png" alt="picture">
+            </article>
+            <article class="post">
+                <img class="post_img three" src="img/post3.png" alt="picture">
                 <div class="post_content">
                     <p class="post_text">Net Neutrality was repealed, but the fight is far from over</p>
                     <div class="main_line">
@@ -124,10 +136,10 @@
                         <img class="comments" src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
                     </div>
                 </div>
-            </div>
-            <div class="post">
-                <img class="post_img" src="img/post1.png" alt="picture">
-                <div class="post_content">
+            </article>
+            <article class="post">
+                <img class="post_img ones" src="img/post1.png" alt="picture">
+                <div class="post_content ones ">
                     <p class="post_text">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</p>
                     <div class="main_line">
                         <span class="main_author">Derek Zimmer</span><span class="main_time"> |  JUL 25, 2018</span>
@@ -139,9 +151,9 @@
                         <img class="comments" src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
                     </div>
                 </div>
-            </div>
-            <div class="post">
-                <img class="post_img" src="img/post2.png" alt="picture">
+            </article>
+            <article class="post">
+                <img class="post_img two" src="img/post2.png" alt="picture">
                 <div class="post_content">
                     <p class="post_text">How to get cheaper flights using a VPN</p>
                     <div class="main_line">
@@ -154,18 +166,33 @@
                         <img class="comments" src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
                     </div>
                 </div>
-            </div>
+           </article>
+           <article class="post">
+                <img class="post_img three" src="img/post3.png" alt="picture">
+                <div class="post_content">
+                    <p class="post_text">Net Neutrality was repealed, but the fight is far from over</p>
+                    <div class="main_line">
+                        <span class="main_author">Chris Miller</span><span class="main_time"> |  JUL 22, 2018</span>
+                    </div>
+                    <div class="main_line">
+                        <p class="main_tags">Governments, Net Neutrality, News</p>
+                    </div>
+                    <div class="post_img" >
+                        <img class="comments" src="img/icon/comment.png" alt="comment" /><div class="zero">0</div>
+                    </div>
+                </div>
+            </article>
             <div class="old">
             <button class="btn btn-post">OLDER POSTS</button>
             </div>
         </main>
         <aside>
-            <div class="search">   
+            <div class="search aside">   
             <label for="username"></label>
             <input  id="username" placeholder="       Search blog">
             <img  src="img/search.png" alt="search"/>
             </div>
-            <div class="ann">
+            <article class="ann">
                 <div class="ann_title">
                 <img src="img/bell.png" alt="bell">
                 <p class="ann_title_text">Announcements</p>
@@ -177,9 +204,9 @@
                     <li class="dot-style">Open Source: Releasing the PIA iOS Client</li>
                     <li class="dot-style">Opera Extension is now available</li>
                 </ul>
-            </div>
+            </article>
             <hr class='aside_hr'/>
-            <div class="ann">
+            <article class="ann">
                 <div class="ann_title">
                 <img src="img/wifi.png" alt="wifi">
                 <p class="ann_title_text">Popular posts</p>
@@ -191,10 +218,10 @@
                     <li class="dot-style">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
                     <li class="dot-style">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
                 </ul>
-            </div>
+            </article>
             <hr class='aside_hr'/>
             <img class="private ways_title" src="img/private.png" alt="private" />
-            <p class="ann_title ways_title tag_cloud_name">Tag cloud</p>
+            <p class=" ways_title tag_cloud_name">Tag cloud</p>
             <div class="tag_cloud ann_title_img ways_title">
             <ul class="cloud"  aria-label="Webdev word cloud">
                 <li><a href="#" data-weight="1">mass</a></li>
@@ -253,7 +280,7 @@
                 <p class="pricing_name_card">YEARLY</p>
                 <img src="img/green_line.png" alt="green-line">
                 <div class="center">
-                <span class="pricing_card_dollar">$</span><span class="pricing_card_cost"> 3.33 </span><span class="pricing_card_mon"> /mo.</span>
+                <span class="pricing_card_dollar del">$</span><span class="pricing_card_cost"> 3.33 </span><span class="pricing_card_mon"> /mo.</span>
                 </div>
                 <hr class="pricing_hr">
                 <div class="center">
@@ -276,8 +303,8 @@
             <img src="img/amazon.png" alt="amazon" />
         </div>
         <div class="how_to_pay">
-            <a href="#">How to pay anonymously   <img src="img/icon/green/Shape.png" alt="picture"></a>
-            <a href="#">Redeem gift card    <img src="img/icon/green/Shape.png" alt="picture"></a>
+            <a href="#">How to pay anonymously       <img src="img/icon/green/Shape.png" alt="picture"></a>
+            <a href="#">Redeem gift card        <img src="img/icon/green/Shape.png" alt="picture"></a>
         </div>
     </div>
     <p class="footer_logo">Company Name</p>
@@ -331,7 +358,7 @@
         <a href="https://twitter.com/" class="icon"><img  class="footer_item" src="img/logo/logo/Shape.png" alt="social" /></a>
         <a href="https://callibri.ru/glossary/google-plus-g" class="icon"><img  class="footer_item" src="img/icon/logo/logo/Shapeg+.png" alt="social" /></a>
         <a href="https://www.linkedin.com" class="icon"> <img  class="footer_item" src="img/icon/logo/logo/Group.png" alt="social" /></a>
-        <a href="https://www.google.com" class="icon"> <img  class="footer_item" src="img/icon/logo/logo/2SL.png" alt="social" /></a>
+        <a href="https://www.reddit.com " class="icon"> <img  class="footer_item" src="img/icon/logo/logo/2SL.png" alt="social" /></a>
         <a href="https://www.youtube.com" class="icon"><img  class="footer_item" src="img/icon/logo/logo/sociai_icons_youtube.png" alt="social" /></a>
         </div>
     </footer> 
