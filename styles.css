@@ -46,6 +46,11 @@ li {
   top: 8px;
   right: 20px;
 }
+.how_to_pay a,
+.tags ul li a:hover,
+a:hover {
+  color: #ff8d00;
+}
 .warning li {
   margin: 12px 32px 12px 0;
 }
@@ -199,7 +204,7 @@ header {
   margin-top: 33px;
   padding: 15px 1px;
 }
-.tags li {
+.tags li a {
   margin-right: 35px;
   color: #4cb649;
 }
@@ -224,7 +229,7 @@ header {
   margin-right: 43px;
   color: #22252e;
 }
-.tags .tags_right li {
+.tags .tags_right li a {
   color: #323642;
   font-weight: 500;
   font-size: 14px;
@@ -538,7 +543,7 @@ a {
   font-size: 27px;
   line-height: 33px;
   color: #000000;
-  margin: 69px 0 58px 200px;
+  margin: 69px 0 58px 12vw;
 }
 .tag_cloud_name {
   width: 100%;
@@ -744,12 +749,12 @@ ul.cloud a:hover::before {
 
 @media (min-width: 320px) and (max-width: 575px) {
   .container {
-    margin: 0 10px;
+    margin: 0 30px;
   }
   .hamburger {
     display: block;
-    top: 11em;
-    left: 2rem;
+    top: 8em;
+    left: 0rem;
   }
   .menu_container {
     display: block;
@@ -786,7 +791,7 @@ ul.cloud a:hover::before {
   .warning_first::before {
     left: -5px;
   }
-  .warning {
+  .btn .warning {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 15px);
@@ -828,6 +833,7 @@ ul.cloud a:hover::before {
     font-size: 14px;
   }
   .getstart {
+    margin-left: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 120px;
@@ -853,6 +859,8 @@ ul.cloud a:hover::before {
   aside {
     padding: 0;
     width: 100%;
+    margin-top: 41px;
+    margin-left: 9px;
   }
   .search_posts {
     display: block;
@@ -869,10 +877,17 @@ ul.cloud a:hover::before {
   .pricing_cards div {
     margin-bottom: 20px;
   }
+  .pricing_title {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+  }
   .pricing_card:last-child {
     height: 380px;
   }
-
+  .btn-post {
+    margin-top: 205px;
+  }
   .pricing {
     padding: 0 30px;
   }
@@ -885,19 +900,23 @@ ul.cloud a:hover::before {
   }
   .pricing_card,
   .pricing_card_big {
-    width: 100%;
+    width: 328px;
   }
   header {
-    margin: 42px -7px -75px 10px;
+    margin: 3px -7px -75px 10px;
   }
   .empty,
   .empty_con {
     display: none;
   }
+  .ann {
+    margin-bottom: -53px;
+  }
   .ways_title {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 132px;
   }
   .footer_logo {
     margin-left: 30px;
@@ -926,7 +945,7 @@ ul.cloud a:hover::before {
   }
   .footer_six {
     grid-area: 3 / 2 / 4 / 3;
-    margin-top: -39px;
+    margin-top: 0;
   }
   .footer_title {
     margin-bottom: 10px;
@@ -944,7 +963,7 @@ ul.cloud a:hover::before {
 
 @media (min-width: 576px) and (max-width: 768px) {
   .container {
-    margin: 0 50px;
+    margin: 0 90px;
   }
   .hamburger {
     display: block;
@@ -1043,7 +1062,7 @@ ul.cloud a:hover::before {
     justify-content: center;
   }
   .footer_logo {
-    margin-left: 50px;
+    margin-left: 90px;
   }
   .top {
     height: 68px;
@@ -1098,6 +1117,7 @@ ul.cloud a:hover::before {
   }
   .footer_six {
     grid-area: 3 / 2 / 4 / 3;
+    margin-top: 0;
   }
   .footer_title {
     margin-bottom: 10px;
@@ -1112,7 +1132,7 @@ ul.cloud a:hover::before {
 
 @media (min-width: 769px) and (max-width: 1075px) {
   .container {
-    margin: 0 150px;
+    margin: 0 50px;
   }
   .login {
     display: none;
@@ -1210,41 +1230,20 @@ ul.cloud a:hover::before {
     margin-right: 10px;
   }
   .footer_logo {
-    margin-left: 100px;
+    margin: 69px 0 58px 5vw;
   }
+
   .footer_title {
     margin-bottom: 10px;
   }
   .footer_six a {
-    margin-right: 10px;
+    margin-right: 0px;
   }
   .footer_six a:last-child {
     margin-right: 0;
   }
   footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 360px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .footer_first {
-    grid-area: 1 / 1 / 4 / 2;
-  }
-  .footer_second {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-  .footer_third {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  .footer_four {
-    grid-area: 3 / 2 / 4 / 3;
-  }
-  .footer_five {
-    grid-area: 1 / 3 / 3 / 4;
-  }
-  .footer_six {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-column-gap: 5px;
   }
 }
 
@@ -1275,6 +1274,12 @@ ul.cloud a:hover::before {
   }
   .empty_con {
     width: 5em;
+  }
+  .footer_third {
+    margin-top: 0px;
+  }
+  .footer_logo {
+    margin: 69px 0 58px 9vw;
   }
 }
 @media (min-width: 1421px) and (max-width: 1550px) {
