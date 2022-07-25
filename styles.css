@@ -1180,16 +1180,8 @@ ul.cloud a:hover::before {
   .menu-icons::after {
     margin-left: 5px;
   }
-  .tags .tags_left li:first-child {
-    margin-left: 5px;
-    margin-right: 10px;
-  }
-  .tags li {
-    margin-right: 10px;
-    font-size: 8px;
-  }
-  .tags .tags_right li {
-    font-size: 8px;
+  .tags {
+    display: none;
   }
   .posts {
     border-right: none;
@@ -1252,7 +1244,25 @@ ul.cloud a:hover::before {
     margin: 0 100px;
   }
   .tags li {
+    margin-right: 5px;
+  }
+  .tags li a {
     margin-right: 20px;
+  }
+  .tags_left {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tags_right {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tags .tags_right li a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
   }
   .menu-icon {
     margin-top: -40px;
