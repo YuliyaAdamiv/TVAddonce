@@ -1010,6 +1010,7 @@ ul.cloud a:hover::before {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 6%;
+    padding-left: 0px;
   }
   .post_content {
     margin: 0;
@@ -1133,30 +1134,41 @@ ul.cloud a:hover::before {
   .login {
     display: inline-block;
   }
-
+  header {
+    margin: 42px 0px -75px 150px;
+  }
   .search_posts {
     display: block;
     margin-left: 3px;
     width: 100%;
   }
-  .menu_main li {
-    margin-right: 10px;
-  }
+
   .hamburger {
-    display: block;
-    left: 9rem;
-    top: 9em;
+    display: none;
   }
   .menu_container {
     display: block;
   }
   .menu_main {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .menu_main li {
+    margin-right: 10px;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
   }
   .menu_buttons {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 15%;
+    display: inline-block;
+    padding-left: 12%;
+  }
+  .getstart {
+    width: 100px;
   }
   .post_content {
     margin: 0;
@@ -1168,7 +1180,9 @@ ul.cloud a:hover::before {
   }
 
   .logo {
-    margin-left: 50px;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
   }
   .search input {
     width: 100%;
