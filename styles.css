@@ -1299,6 +1299,13 @@ ul.cloud a:hover::before {
   .empty_con {
     width: 10em;
   }
+  .main_content {
+    margin: 50px;
+  }
+  .main_text {
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1551px) and (max-width: 1980px) {
   .search_posts {
