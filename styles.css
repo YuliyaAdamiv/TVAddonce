@@ -535,9 +535,6 @@ a {
 .private {
   margin: 30px 0 50px 0;
 }
-/* .aside_hr {
-  margin-right: 30px;
-} */
 .footer_logo {
   font-family: 'Inter';
   font-style: normal;
@@ -756,7 +753,7 @@ ul.cloud a:hover::before {
   .hamburger {
     display: block;
     top: 8em;
-    left: 0rem;
+    left: 2rem;
   }
   .menu_container {
     display: block;
@@ -835,7 +832,6 @@ ul.cloud a:hover::before {
     font-size: 14px;
   }
   .getstart {
-    margin-left: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 120px;
@@ -907,9 +903,12 @@ ul.cloud a:hover::before {
   header {
     margin: 3px -7px -75px 10px;
   }
-  .empty,
+
   .empty_con {
     display: none;
+  }
+  .empty {
+    width: 10%;
   }
   .ann {
     margin-bottom: -53px;
@@ -970,14 +969,13 @@ ul.cloud a:hover::before {
   .hamburger {
     display: block;
     top: 11em;
+    left: 9em;
   }
   .empty,
   .empty_con {
     display: none;
   }
-  header {
-    margin: 42px -7px -75px 20%;
-  }
+
   .menu_container {
     display: block;
   }
@@ -1000,7 +998,7 @@ ul.cloud a:hover::before {
     right: 5px;
   }
   .logo {
-    margin-left: 30px;
+    margin-left: -54px;
   }
   .pricing_card {
     height: 400px;
@@ -1011,6 +1009,7 @@ ul.cloud a:hover::before {
   .getstart {
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 60%;
   }
   .post_content {
     margin: 0;
@@ -1134,9 +1133,7 @@ ul.cloud a:hover::before {
   .login {
     display: none;
   }
-  header {
-    margin: 42px -7px -75px 20%;
-  }
+
   .search_posts {
     display: block;
     margin-left: 3px;
@@ -1306,7 +1303,7 @@ ul.cloud a:hover::before {
     padding-top: 80px;
   }
   .empty {
-    width: 3em;
+    width: 8%;
   }
   .empty_con {
     width: 5em;
