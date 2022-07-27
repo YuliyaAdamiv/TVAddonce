@@ -870,7 +870,7 @@ ul.cloud a:hover::before {
     width: 100%;
   }
   .how_to_pay a {
-    margin: 60px 17px 60px 20px;
+    margin: 60px 10% 60px 20px;
   }
   .pricing_cards {
     display: flex;
@@ -1004,6 +1004,9 @@ ul.cloud a:hover::before {
   }
   .pricing_card {
     height: 400px;
+  }
+  .pricing_card_big {
+    height: 420px;
   }
   .getstart {
     margin-top: 30px;
@@ -1164,6 +1167,7 @@ ul.cloud a:hover::before {
     display: flex;
     justify-content: center;
   }
+
   .logo {
     margin-left: 50px;
   }
@@ -1193,7 +1197,9 @@ ul.cloud a:hover::before {
     margin: 0px 35px 0px 20px;
     padding-top: 80px;
   }
-
+  .btn_sign_up {
+    margin-left: 10px;
+  }
   .main,
   .main_section {
     display: flex;
@@ -1274,7 +1280,9 @@ ul.cloud a:hover::before {
     font-size: 12px;
     line-height: 16px;
   }
-
+  .btn_sign_up {
+    margin-left: 10px;
+  }
   .menu-icon {
     margin-top: -40px;
   }
