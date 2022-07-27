@@ -987,7 +987,7 @@ ul.cloud a:hover::before {
     padding-left: 0;
   }
   .login {
-    display: none;
+    display: inline-block;
   }
   .search_posts {
     display: block;
@@ -1006,10 +1006,10 @@ ul.cloud a:hover::before {
   .pricing_card_big {
     height: 420px;
   }
-  .getstart {
+  .menu_buttons {
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 60%;
+    margin-left: 6%;
   }
   .post_content {
     margin: 0;
@@ -1131,7 +1131,7 @@ ul.cloud a:hover::before {
     margin: 0 50px;
   }
   .login {
-    display: none;
+    display: inline-block;
   }
 
   .search_posts {
@@ -1145,7 +1145,7 @@ ul.cloud a:hover::before {
   .hamburger {
     display: block;
     left: 9rem;
-    top: 7em;
+    top: 9em;
   }
   .menu_container {
     display: block;
@@ -1153,8 +1153,10 @@ ul.cloud a:hover::before {
   .menu_main {
     display: none;
   }
-  .login {
-    display: none;
+  .menu_buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
   }
   .post_content {
     margin: 0;
@@ -1167,9 +1169,6 @@ ul.cloud a:hover::before {
 
   .logo {
     margin-left: 50px;
-  }
-  .getstart {
-    margin-left: 100%;
   }
   .search input {
     width: 100%;
