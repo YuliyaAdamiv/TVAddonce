@@ -869,12 +869,15 @@ ul.cloud a:hover::before {
     margin-left: 3px;
     width: 100%;
   }
+  .how_to_pay a {
+    margin: 60px 17px 60px 20px;
+  }
   .pricing_cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 17px;
   }
   .pricing_cards div {
     margin-bottom: 20px;
@@ -899,7 +902,7 @@ ul.cloud a:hover::before {
   }
   .pricing_card,
   .pricing_card_big {
-    width: 328px;
+    width: 280px;
   }
   header {
     margin: 3px -7px -75px 10px;
@@ -1045,6 +1048,10 @@ ul.cloud a:hover::before {
   .search input {
     width: 100%;
   }
+
+  .how_to_pay a {
+    margin: 60px 35px 60px 20px;
+  }
   .aside {
     display: none;
   }
@@ -1179,6 +1186,13 @@ ul.cloud a:hover::before {
     border-right: none;
     margin-right: 0;
   }
+  .how_to_pay {
+    padding-bottom: 80px;
+  }
+  .how_to_pay a {
+    margin: 0px 35px 0px 20px;
+    padding-top: 80px;
+  }
 
   .main,
   .main_section {
@@ -1275,6 +1289,13 @@ ul.cloud a:hover::before {
   }
   header {
     margin-left: 100px;
+  }
+  .how_to_pay {
+    padding-bottom: 80px;
+  }
+  .how_to_pay a {
+    margin: 0px 35px 0px 20px;
+    padding-top: 80px;
   }
   .empty {
     width: 3em;
